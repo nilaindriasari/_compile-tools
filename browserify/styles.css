@@ -1,0 +1,131 @@
+body {
+  background: #eeeeee;
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  line-height: 2;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+}
+
+.wrapper {
+  padding: 1em 0;
+  background: #ffffff;
+}
+
+/* Responsive Navigation
+------------------------------------------*/
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  border-top: 1px dashed black;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.nav-collapse a {
+  background: #cccccc;
+  display: block;
+  text-align: center;
+  padding: .7em 0;
+  border-bottom: 1px dashed black;
+}
+
+.nav-collapse a:hover,
+.nav-collapse a:focus {
+  background: cyan;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-image: url(img/hamburger.svg);
+  width: 32px;
+  height: 32px;
+  float: right;
+  /* Hide text*/
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 6%;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-collapse {
+    background: #cccccc;
+  }
+
+  .nav-collapse ul {
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    max-width: 1080px;
+    border-top: none;
+  }
+
+  .nav-collapse li{
+    border-right: 1px dashed black;
+  }
+
+.nav-collapse li:first-child {
+  border-left: 1px dashed black;
+}
+
+  .nav-collapse a{
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "browserify-example",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "responsive-nav": "^1.0.39",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "compile": "mkdir -p dist/js && browserify src/js/main.js > dist/js/bundle.js",
+    "compile:js": "watch 'npm run compile' src/js/"
+  }
+}
