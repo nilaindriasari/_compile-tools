@@ -1,0 +1,16 @@
+body {
+  color: $color-text;
+  font-size: 16px;
+  font-family: $font-family;
+}
+
+h2{
+  color: #434625;
+  font-size: 23px;
+}
+
+h1{
+  @extend h2;
+  font-weight: lighter;
+  font-size: 32px;
+}

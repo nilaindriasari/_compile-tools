@@ -1,0 +1,42 @@
+nav ul {
+  list-style: none;
+  padding:0;
+  display:flex;
+  li {
+    margin-right: .5em;
+    a{
+      background: #cccccc;
+      padding: .5em 1em;
+      transition: 1s;
+      @include border-radius();
+      @include shadow(1px,1.5px,2px,rgba(0,0,0,0.3));
+      &:hover{
+        background: yellow;
+        @include border-radius();
+      }
+    }
+  }
+}
+
+
+//nav ul {
+//  list-style: none;
+//  padding:0;
+//  display:flex;
+//}
+//
+//nav li {
+//  margin-right: .5em;
+//}
+//
+//nav a{
+//  background:#cccccc;
+//  padding: .5em 1em;
+//  transition: 1s;
+//  border-radius: 15px 0;
+//}
+//
+//nav a:hover {
+//  background:yellow;
+//  border-radius: 0 15px;
+//}

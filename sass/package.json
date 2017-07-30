@@ -1,0 +1,12 @@
+{
+  "name": "compile-sass",
+  "version": "0.0.1",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "sass": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "compile:css": "watch 'npm run sass' sass/"
+  }
+}

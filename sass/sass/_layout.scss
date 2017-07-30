@@ -1,0 +1,17 @@
+body {
+  background: #A6B20B;
+  margin: 0;
+}
+
+header,
+.container,
+footer {
+  @include center-block (88%);
+  max-width: 1080px;
+}
+
+.wrapper {
+  padding: 1em 0;
+  background: #F7FF8F;
+  @include shadow(3px,3px,10px,rgba(0,0,0,0.2));
+}
