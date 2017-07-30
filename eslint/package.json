@@ -1,0 +1,12 @@
+{
+  "name": "eslint-example",
+  "version": "0.0.1",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "lint": "eslint js/*.js",
+    "compile:js": "watch 'npm run lint' js/"
+  }
+}
